@@ -1,0 +1,47 @@
+﻿@page
+@model EntAppSecond.Pages.FormWSFolder.Test1Model
+@{
+    ViewData["Title"] = "Test1";
+}
+
+<fieldset>
+
+    <legend>
+        Choose your destiny
+    </legend>
+
+    <form method="post">
+
+        <label asp-for=ProductCode />
+        <input type="text" asp-for=ProductCode />
+
+        <br />
+
+        <label for="Red">Red</label>
+        <input class="form-group form-group-lg" type="radio" value="Red" id="Red" asp-for=RadioColour />
+
+        <br />
+
+        <label for="Yellow">Yellow</label>
+        <input class="form-group form-group-lg" type="radio" value="Yellow" id="Yellow" asp-for=RadioColour />
+
+        <br />
+
+        <label for="Blue">Blue</label>
+        <input class="form-group form-group-lg" type="radio" value="Blue" id="Blue" asp-for=RadioColour />
+
+        <br />
+
+        <label asp-for=Consent>I Consent to Everything</label>
+        <input asp-for=Consent />
+
+        <br />
+
+        <button type="submit">Click to Submit</button>
+
+    </form>
+
+</fieldset>
+
+
+
